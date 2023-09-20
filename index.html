@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap 5.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- Sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- mi css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/pulse_6822.png" type="image/x-icon" />
+    <title>Proyecto final Olmos Gustavo</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-info bg-gradient">
+        <div class="container-fluid pr-5">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="img/pulse_6822.png"
+              alt="Bootstrap"
+              width="100"
+              height="100"
+          /></a>
+          <p class="banner-text align-self-end fs-5 text-light">
+            Todo para controlar tu mundo.
+          </p>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a
+                class="btn btn-info text-light active"
+                aria-current="page"
+                href="#"
+                >Inicio</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="banner container-fluid my-3 d-flex">
+      <div
+        class="formulario-carrito bg-info bg-gradient d-flex justify-content-center flex-column mb-3 border border-2 border-info rounded w-50 p3"
+        style="height: 250px"
+      >
+        <h2 class="text-light">Ingresa tus datos</h2>
+        <hr class="text-light border-4" />
+        <form id="login-form">
+          <label class="text-light" for="user">Nombre</label>
+          <input type="text" name="" id="username" /> <br /><br />
+
+          <label class="text-light" for="pss">Clave</label>
+          <input type="text" name="" id="password" /> <br /><br />
+
+          <button
+            id=""
+            class="btn btn-primary text-light text-right"
+            type="submit"
+          >
+            Enviar
+          </button>
+        </form>
+      </div>
+
+      <div
+        class="contacto d-flex justify-content-center flex-column mb-3 border border-2 border-info rounded w-50 p3"
+        style="height: 250px"
+      >
+        <h2 class="text-center text-light">Telefono: 3548-468560.-</h2>
+
+        <p class="text-center text-light">BUSCANOS EN EL MAPA DE LA VIDA</p>
+      </div>
+    </section>
+
+    <!-- //Carrito de ventas: -->
+
+    <!-- Section de cards con los productos: -->
+    <section
+      id="contenedor-productos"
+      class="productos-cards d-flex flex-wrap justify-content-center"
+    >
+      
+    </section>
+
+    <!-- Section que me muestra el carrito de compras en el DOM -->
+
+    <section
+      class="carrito-html d-flex text-light align-items-center justify-content-center flex-column mt-5 mb-5 border border-2 border-info rounded p3 bg-info bg-gradient"
+      style="height: auto"
+    >
+      <h1 class="text-light">Agregado a tu Carrito:</h1>
+
+      <div id="act"></div>
+
+      <div id="carrito" class="carrito">
+        
+        <ul id="lista-carrito" class="text-light">
+          <!-- aca se van agregando los productos añadidos -->
+        </ul>
+        <p>Total: <span id="total"> 0.00</span></p>
+        <button id="limpiar-carrito">Limpiar Lista</button>
+        <button id="guardar-carrito">Guardar Carrito</button>
+        <button id="mostrar-carrito">Mostrar Carrito</button>
+        <button id="borrar-carrito">Borrar Carrito</button>
+      </div>
+      <div id="total-usd" class="dolares">
+        Tu compra en Dólares: u$s 0.00
+      </div>
+      
+    </section>
+
+    <!-- section de descuento -->
+    
+    <section class="container-fluid d-flex text-light align-items-center justify-content-center flex-column mb-3 bg-info bg-gradient border border-2 border-info rounded">
+
+      <p class="mt-3">❕ Si tenes código de descuento, ingresalo antes de guardar tu carrito y te descontamos el 30% de tu compra ❕</p>
+
+      <input
+        type="text"
+        id="codigo-descuento" 
+        placeholder="Ingresa tu código."
+      />
+      <button id="aplicar-descuento" class="mb-3">Aplicar Descuento</button>
+    </section>
+
+    <!-- mis scripts de JS -->
+
+    <script src="js/login.js"></script>
+    <script src="js/carrito.js"></script>
+  </body>
+</html>

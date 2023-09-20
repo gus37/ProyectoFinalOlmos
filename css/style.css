@@ -1,0 +1,127 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+/* cita:
+font-family: 'Courgette', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+/* generales */
+
+button{
+  background-color:  #0033FF ;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+}
+
+/* Estilos del login */
+
+.banner-text {
+  font-family: "Courgette", cursive;
+}
+
+.contacto {
+  background-image: url(../img/7SUp.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.modal-content {
+  background-color: rgba(65, 189, 242, 0.252);
+  backdrop-filter: blur(2px);
+}
+
+/* Estilos de las cards */
+
+.productos-cards div{
+  background-color:  #4dd0e1 ;
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(254, 252, 252, 0.562);
+}
+
+.productos-cards img{
+  border-radius: 1%;
+}
+.productos-cards h2{
+  color: white;
+  font-family: "Courgette", cursive;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.productos-cards h5{
+  color: white;
+  text-align: justify;
+  padding-bottom: 1rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.2;
+  max-height: 2.4em;
+}
+
+.productos-cards h5:hover{
+  -webkit-line-clamp: unset;
+  max-height: unset;
+}
+
+.productos-cards p{
+  color: #0033FF;
+  font-size: 10px;
+  text-align: center;
+}
+
+.productos-cards span{
+  color: white;
+  font-family: "Courgette", cursive;
+  font-size: 30px;
+  text-align: end;
+  padding-bottom: 1rem;
+}
+
+.productos-cards button{
+  background-color:  #0033FF ;
+  color: white;
+  border: none;
+}
+
+/* Estilos del carrito */
+
+.carrito-html h1{
+  font-family: "Courgette", cursive;
+}
+
+.carrito p{
+  font-family: "Courgette", cursive;
+  text-align: center;
+  font-size: 3em;
+}
+
+.dolares{
+  text-align: center;
+  font-size: 3em;
+}
+
+/* Estilos para los sweet alerts */
+
+.background_blur {
+  backdrop-filter: blur(1px);
+}
+
+.alert_blur {
+  font-family: "Courgette", cursive;
+  background-color: rgba(94, 194, 245, 0.7);
+  backdrop-filter: blur(2px);
+}

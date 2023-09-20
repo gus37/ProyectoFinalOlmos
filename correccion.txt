@@ -1,0 +1,22 @@
+Buenas tardes Gustavo, muchas gracias por la entrega del proyecto. Voy a pedirte que vuelvas a entregarlo con algunas correcciones.
+
+
+1- Ya no se puede utilizar el prompt ni el alert, así que utiliza el DOM para capturar los datos del usuario.
+
+
+2- Cuando guardes los productos en el carrito, fijate de tener una validación para no guardar un carrito vacío, porque si no agrego nada y le doy a guardar, me guarda un array vacío en el localStorage.
+
+
+3- Agrega una opción para obtener los datos que guardaste en el localStorage, para poder verlos en pantalla.
+
+
+Por lo demás está genial.
+
+
+Si tienes dudas de como realizar ciertas partes no dudes en consultarme.
+
+
+Y recuerda, el tutor te corrige las pre-entregas, el profe te corrige la entrega final. 
+
+
+Un saludo!
